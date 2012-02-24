@@ -8,9 +8,9 @@ var fs = require('fs');
 var path = require('path');
 http.createServer(function (request, response) {
     console.log('request starting...');
-    var filePath = './files' + request.url;
-    if (filePath == './files/')
-        filePath = './files/index.htm';
+    var filePath = '/app/files' + request.url;
+    if (filePath == '/app/files/')
+        filePath = '/app/files/index.htm';
     var extname = path.extname(filePath);
     var contentType = 'text/html';
     switch (extname) {
@@ -35,12 +35,12 @@ http.createServer(function (request, response) {
                 }
             });
         }        else {
-            fs.readdir('./', function(err, files)
+            fs.readdir('/app/', function(err, files)
               {
                 if(files.length>0)
                   {
                     for (var file in files)
-                      console.log(file);
+                      console.log("file:"  + file);
                   }
               });
             response.writeHead(404);
