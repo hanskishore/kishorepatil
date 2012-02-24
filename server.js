@@ -8,9 +8,9 @@ var fs = require('fs');
 var path = require('path');
 http.createServer(function (request, response) {
     console.log('request starting...');
-    var filePath = '.' + request.url;
-    if (filePath == './')
-        filePath = './index.htm';
+    var filePath = './files' + request.url;
+    if (filePath == './files/')
+        filePath = './files/index.htm';
     var extname = path.extname(filePath);
     var contentType = 'text/html';
     switch (extname) {
