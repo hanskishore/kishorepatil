@@ -16,6 +16,7 @@ http.createServer(function (request, response) {
     switch (extname) {
         case '.js':
             contentType = 'text/javascript';
+            filePath = filePath.replace('/app/files', '/app/scripts');
             break;
         case '.css':
             contentType = 'text/css';
