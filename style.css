@@ -1,0 +1,88 @@
+@media all {
+th { text-align: left; }
+img, abbr { border: 0; }
+}
+
+@media screen, projection, print {
+* { font-weight: normal; }
+html { font: 100%/1.6 cambria, palatino, georgia, serif; }
+h1, .nav { font-size: 1.25em; }
+h2, h3, h4, h5, pre, form code, code, kbd, var { font-family: corbel, optima, arial, sans-serif; }
+h2, h3, h4, fieldset p, #about { line-height: 1.3; }
+h2 { font-size: 1.9em; margin-bottom: .37em; }
+h2.alt { margin-top: 1em; }
+h2 + h3 { margin-top: .4em; }
+
+h3, h4 { margin: 1em 0 0; }
+h3 { font-size: 1.5em; }
+h4, h4 *, strong, strong *, em *, .note, .note *, .stop { font-style: italic !important; }
+h4 { font-size: 1.31em; }
+h5 { font-size: 1.125em; margin: .8em 0 0; }
+p, blockquote, pre, ul, ol, dl { margin: .6em 0; }
+ul ul, ol ul, ol ol { margin: .1em 0 .15em 1.75em; }
+ul, ol, dd { margin-left: 2.5em; padding: 0; }
+table, form p, div.media p, #about p, #search, #intro p, .nav { margin: 0; }
+table, input, textarea { font-size: 1em; }
+table { border-collapse: collapse; margin: 1.2em 0 0; width: 100%; }
+th, td, form { padding: 5px 3px; }
+th, td { vertical-align: top; }
+.meta { margin-top: -.6em; }
+}
+ul
+{
+	background-color: yellow;
+}
+ul li
+{
+	display:inline-block;
+	margin:20px;
+	padding:2px 25px 0px 1px;
+	background-color: Gray;
+	text-decoration:none;
+}
+
+li a
+{
+text-decoration:none;
+}
+
+article
+{
+	background-color: Gray;
+	width:760px;
+	/*height:600px;*/
+}
+
+#divTop
+{
+  display:block;
+  border-top:solid 35px #c2c34c;
+  border-left: solid 1px #c0c0c0;
+  border-right: solid 1px #c0c0c0;
+  border-bottom: solid 1px #c0c0c0;
+  /*height:100px;*/
+  border-radius:10px;
+  box-shadow: rgba(0,0,0,0.4) 0px 0px 0px 5px ;
+}
+#divTopHeader
+{
+  margin-top:-60px;
+  margin-left:5px;
+  float:left;
+  width:100%;
+  
+}
+#divTopHeader2
+{
+   font-size:12px;
+  height:11px;
+  margin-top:-15px;
+  clear:left;
+  float:left;
+  width:99.5%;
+  padding:0px 1px 0px 1px;
+  background-color: #c6c6c6;
+  border-top: solid 2px #c2a000;
+  border-bottom:solid 2px #c6c6c0;
+  
+}

@@ -1,0 +1,593 @@
+
+<html>
+	<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9" /> 
+		<title> Test Page</title>
+		<script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+		<script src="myscript.js" type="text/javascript"></script>
+		<link href="./style.css" rel="stylesheet" type="text/css" />
+		<!--<link href="./default.en.css" rel="stylesheet" type="text/css" />-->
+	</head>
+	<body>
+    <div id="header">Node sameple web pageheader</div>
+		<nav>
+			<ul>
+				<li> <a href="http://google.com">Home</a> </li>
+				<li> <a href="http://blog.kishorepatil.com">About</a> </li>
+				<li> <a href="http://dotnetworld.net">Contact</a> </li>
+			</ul>
+		</nav>
+		<article>
+        This is some test based website using node
+		</article>
+		<br /><br />
+<style type="text/css">
+  .table
+  {
+    font: 100%/1.6 cambria, palatino, georgia, serif; 
+    border-collapse: collapse; margin: 1.2em 0 0; width: 100%;
+  }
+  .headergroup
+  {
+    font-weight:italic;padding:5px 3px; !important;color:red;
+  }
+</style>
+
+		<div id="divTop" style="">
+      <span id="divTopHeader" ><h3 id=selectors><span>Selector Index supported in different levels of css as per <a href="http://www.w3.org">w3</a></span></h3>
+</span>
+      <!--<div id="divTopHeader2"><span  style="margin-left:5px;">some more data here</span></div>
+      &nbsp;-->
+      
+  <table style="border:1px solid #c0c0c0;" border="1px" cell-padding="0px" cell-spacing="1px">
+   <thead>
+    <tr>
+     <th >Pattern</th>
+
+     <th>Meaning</th>
+
+     <th>Described in section</th>
+
+     <th>CSS1</th>
+     <th>CSS2</th>
+     <th>CSS3</th>
+    </tr>
+   <tbody>
+    <tr>
+     <th scope=row> *
+
+     <td>any element
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#universal-selector">Universal
+      selector</a>
+
+     <td>no</td>
+     <td>yes</td>
+     <td>yes</td>
+
+    <tr>
+     <th scope=row> E
+
+     <td>an element of type E
+
+     <td><a href="http://www.w3.org/TR/css3-selectors/#type-selectors">Type
+      selector</a>
+
+     <td>yes</td>
+     <td>yes</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E[foo]
+
+     <td>an E element with a "foo" attribute
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">Attribute
+      selectors</a>
+
+     <td>no</td>
+     <td>yes</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E[foo="bar"]
+
+     <td>an E element whose "foo" attribute value is exactly equal to "bar"
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">Attribute
+      selectors</a>
+
+     <td>no</td>
+     <td>yes</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E[foo~="bar"]
+
+     <td>an E element whose "foo" attribute value is a list of
+      whitespace-separated values, one of which is exactly equal to "bar"
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">Attribute
+      selectors</a>
+
+     <td>no</td>
+     <td>yes</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E[foo^="bar"]
+
+     <td>an E element whose "foo" attribute value begins exactly with the
+      string "bar"
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">Attribute
+      selectors</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E[foo$="bar"]
+
+     <td>an E element whose "foo" attribute value ends exactly with the
+      string "bar"
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">Attribute
+      selectors</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E[foo*="bar"]
+
+     <td>an E element whose "foo" attribute value contains the substring
+      "bar"
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">Attribute
+      selectors</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E[foo|="en"]
+
+     <td>an E element whose "foo" attribute has a hyphen-separated list of
+      values beginning (from the left) with "en"
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">Attribute
+      selectors</a>
+
+     <td>no</td>
+     <td>yes</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E:root
+
+     <td>an E element, root of the document
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+      pseudo-classes</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E:nth-child(n)
+
+     <td>an E element, the n-th child of its parent
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+      pseudo-classes</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E:nth-last-child(n)
+
+     <td>an E element, the n-th child of its parent, counting from the last
+      one
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+      pseudo-classes</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E:nth-of-type(n)
+
+     <td>an E element, the n-th sibling of its type
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+      pseudo-classes</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E:nth-last-of-type(n)
+
+     <td>an E element, the n-th sibling of its type, counting from the last
+      one
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+      pseudo-classes</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E:first-child
+
+     <td>an E element, first child of its parent
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+      pseudo-classes</a>
+
+     <td>no</td>
+     <td>yes</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E:last-child
+
+     <td>an E element, last child of its parent
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+      pseudo-classes</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E:first-of-type
+
+     <td>an E element, first sibling of its type
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+      pseudo-classes</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E:last-of-type
+
+     <td>an E element, last sibling of its type
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+      pseudo-classes</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E:only-child
+
+     <td>an E element, only child of its parent
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+      pseudo-classes</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E:only-of-type
+
+     <td>an E element, only sibling of its type
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+      pseudo-classes</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+    <tr>
+     <th scope=row> E:empty
+
+     <td>an E element that has no children (including text nodes)
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+      pseudo-classes</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E:link<br>
+      E:visited
+
+     <td>an E element being the source anchor of a hyperlink of which the
+      target is not yet visited (:link) or already visited (:visited)
+
+     <td><a href="http://www.w3.org/TR/css3-selectors/#link">The link
+      pseudo-classes</a>
+
+     <td>yes</td>
+     <td>yes</td>
+     <td>yes</td>
+
+
+    <tr>
+     <th scope=row> E:active
+    
+     <td>an E element during certain user actions
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#useraction-pseudos">The user
+      action pseudo-classes</a>
+
+     <td>yes</td>
+     <td>yes</td>
+     <td>yes</td>
+
+
+    <tr>
+    <tr>
+     <th scope=row> E:hover<br>
+      E:focus
+
+     <td>an E element during certain user actions
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#useraction-pseudos">The user
+      action pseudo-classes</a>
+
+     <td>no</td>
+     <td>yes</td>
+     <td>yes</td>
+
+
+    <tr>
+    
+     <th scope=row> E:target
+
+     <td>an E element being the target of the referring URI
+
+     <td><a href="http://www.w3.org/TR/css3-selectors/#target-pseudo">The
+      target pseudo-class</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+    <tr>
+     <th scope=row> E:lang(fr)
+
+     <td>an element of type E in language "fr" (the document language
+      specifies how language is determined)
+
+     <td><a href="http://www.w3.org/TR/css3-selectors/#lang-pseudo">The
+      :lang() pseudo-class</a>
+
+     <td>no</td>
+     <td>yes</td>
+     <td>yes</td>
+
+    <tr>
+     <th scope=row> E:enabled<br>
+      E:disabled
+
+     <td>a user interface element E which is enabled or disabled
+
+     <td><a href="http://www.w3.org/TR/css3-selectors/#UIstates">The UI
+      element states pseudo-classes</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+    <tr>
+     <th scope=row> E:checked<!--<br>E:indeterminate-->
+
+     <td>a user interface element E which is checked<!-- or in an
+      indeterminate state-->
+      (for instance a radio-button or checkbox)
+
+     <td><a href="http://www.w3.org/TR/css3-selectors/#UIstates">The UI
+      element states pseudo-classes</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+    <tr>
+     <th scope=row> E::first-line
+
+     <td>the first formatted line of an E element
+
+     <td><a href="http://www.w3.org/TR/css3-selectors/#first-line">The
+      ::first-line pseudo-element</a>
+
+     <td>yes</td>
+     <td>yes</td>
+     <td>yes</td>
+
+    <tr>
+     <th scope=row> E::first-letter
+
+     <td>the first formatted letter of an E element
+
+     <td><a href="http://www.w3.org/TR/css3-selectors/#first-letter">The
+      ::first-letter pseudo-element</a>
+
+     <td>yes</td>
+     <td>yes</td>
+     <td>yes</td>
+
+    <tr>
+     <th scope=row> E::before
+
+     <td>generated content before an E element
+
+     <td><a href="http://www.w3.org/TR/css3-selectors/#gen-content">The
+      ::before pseudo-element</a>
+
+     <td>no</td>
+     <td>yes</td>
+     <td>yes</td>
+
+    <tr>
+     <th scope=row> E::after
+
+     <td>generated content after an E element
+
+     <td><a href="http://www.w3.org/TR/css3-selectors/#gen-content">The
+      ::after pseudo-element</a>
+
+     <td>no</td>
+     <td>yes</td>
+     <td>yes</td>
+
+    <tr>
+     <th scope=row> E.warning
+
+     <td>an E element whose class is "warning" (the document language
+      specifies how class is determined).
+
+     <td><a href="http://www.w3.org/TR/css3-selectors/#class-html">Class
+      selectors</a>
+
+     <td>yes</td>
+     <td>yes</td>
+     <td>yes</td>
+
+    <tr>
+     <th scope=row> E#myid
+
+     <td>an E element with ID equal to "myid".
+
+     <td><a href="http://www.w3.org/TR/css3-selectors/#id-selectors">ID
+      selectors</a>
+
+     <td>yes</td>
+     <td>yes</td>
+     <td>yes</td>
+
+    <tr>
+     <th scope=row> E:not(s)
+
+     <td>an E element that does not match simple selector s
+
+     <td><a href="http://www.w3.org/TR/css3-selectors/#negation">Negation
+      pseudo-class</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+
+    <tr>
+     <th scope=row> E F
+
+     <td>an F element descendant of an E element
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#descendant-combinators">Descendant
+      combinator</a>
+
+     <td>yes</td>
+     <td>yes</td>
+     <td>yes</td>
+
+    <tr>
+     <th scope=row> E &gt; F
+
+     <td>an F element child of an E element
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#child-combinators">Child
+      combinator</a>
+
+     <td>no</td>
+     <td>yes</td>
+     <td>yes</td>
+
+    <tr>
+     <th scope=row> E + F
+
+     <td>an F element immediately preceded by an E element
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators">Adjacent
+      sibling combinator</a>
+
+     <td>no</td>
+     <td>yes</td>
+     <td>yes</td>
+
+    <tr>
+     <th scope=row> E ~ F
+
+     <td>an F element preceded by an E element
+
+     <td><a
+      href="http://www.w3.org/TR/css3-selectors/#general-sibling-combinators">General
+      sibling combinator</a>
+
+     <td>no</td>
+     <td>no</td>
+     <td>yes</td>
+  </table>
+  <span>Reference from <a href="http://www.w3.org/TR/CSS/#css3">W3.org</a></span>
+
+		</div>
+	</body>
+</html>
