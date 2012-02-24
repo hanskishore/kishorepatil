@@ -35,6 +35,14 @@ http.createServer(function (request, response) {
                 }
             });
         }        else {
+            fs.readdir('.', function(err, files)
+              {
+                if(files.length>0)
+                  {
+                    for (var file in files)
+                      console.log(file);
+                  }
+              });
             response.writeHead(404);
             response.end("Does not exist");
         }
