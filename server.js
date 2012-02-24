@@ -35,7 +35,7 @@ http.createServer(function (request, response) {
                 }
             });
         }        else {
-            fs.readdir('.', function(err, files)
+            fs.readdir('./', function(err, files)
               {
                 if(files.length>0)
                   {
